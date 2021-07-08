@@ -42,8 +42,8 @@ public class CrossBrowserChecking {
 		driver.get("https://www.amazon.com/");						// Navigate to the amazon.com website
 		driver.manage().window().maximize();						// Maximize the window size
 		driver.manage().deleteAllCookies();						// Deleting all the cookies
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);		// Set the page load time out
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		// Set implicit wait 
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);		// Set the page load time out - amount of time that Selenium webdriver will wait for a page to load
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		// Set implicit wait -Selenium WebDriver will wait for the element before the exception occurs
 		
 		
 	}
