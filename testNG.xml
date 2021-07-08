@@ -1,0 +1,35 @@
+
+ <suite name="browserCheck" >
+  <test name="Chrome Browser Check"   >
+  
+   	<parameter name="browserName" value="chrome"></parameter>
+   	
+   	<classes>
+   	
+   		<class name="co.browserCheck.CrossBrowserChecking"></class>
+   		
+  	</classes>
+   
+  </test>
+   
+  <test name="Firefox Browser Check">
+    <parameter name="browserName" value="firefox"></parameter>
+    
+  	<classes>
+   		
+   		<class name="co.browserCheck.CrossBrowserChecking"></class>
+   		
+   	</classes>
+ </test>
+ 
+ <test name="IE Browser Check">
+   <parameter name="browserName" value="ie"></parameter>
+   
+   <classes>
+   
+   		<class name="co.browserCheck.CrossBrowserChecking"></class>
+   		
+   </classes>
+ 
+ </test>
+</suite>
