@@ -26,9 +26,9 @@ public class CrossBrowserChecking {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"Drivers//geckodriver.exe");	// Set path to the geckodriver.exe
 			driver=new FirefoxDriver();
 			
-		}else if(browserName.equalsIgnoreCase("ie")){										// Check if parameter passed as IE
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"Drivers//iedriver.exe"); 		// Set path to the iedriver.exe
-			driver=new InternetExplorerDriver();
+		}else if(browserName.equalsIgnoreCase("edge")){										// Check if parameter passed as edge
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"Drivers//edgedriver.exe");		// Set path to the edgedriver.exe
+			driver=new EdgeDriver();
 		}else {
 			
 			System.out.println("you are not using a valid browser");
