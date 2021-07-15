@@ -19,15 +19,15 @@ public class CrossBrowserChecking {
 	{
 		
 		if(browserName.equalsIgnoreCase("chrome")) {										// Check if parameter passed as chrome
-			System.setProperty("webDriver.chrome.driver",System.getProperty("user.dir")+"Drivers//chromedriver.exe"); 	// Set path to the chromedriver.exe
+			System.setProperty("webDriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe"); 	// Set path to the chromedriver.exe
 			driver=new ChromeDriver();
 			
 		}else if(browserName.equalsIgnoreCase("firefox")){									// Check if parameter passed as firefox
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"Drivers//geckodriver.exe");	// Set path to the geckodriver.exe
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//Drivers//geckodriver.exe");	// Set path to the geckodriver.exe
 			driver=new FirefoxDriver();
 			
 		}else if(browserName.equalsIgnoreCase("edge")){										// Check if parameter passed as edge
-			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"Drivers//edgedriver.exe");		// Set path to the edgedriver.exe
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//Drivers//edgedriver.exe");	// Set path to the edgedriver.exe
 			driver=new EdgeDriver();
 		}else {
 			
